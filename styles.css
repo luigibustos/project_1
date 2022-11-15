@@ -38,8 +38,36 @@ main {
 #simon-housing {
     height: 600px;
     width: 600px;
-    border: 2px solid cyan;
+    border: 3px solid cyan;
     border-radius: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#btn-1 {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    border-radius: 100% 0 0 0;
+}
+#btn-2 {
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    border-radius: 0 100% 0 0;
+}
+#btn-3 {
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    border-radius: 0 0 0 100%;
+}
+#btn-4 {
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    border-radius: 0 0 100% 0%;
 }
 
 #game-stats {
