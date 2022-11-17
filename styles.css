@@ -47,12 +47,23 @@ main {
 #simon-housing {
     height: 600px;
     width: 600px;
-    border: 3px solid cyan;
+    /* border: 3px solid cyan; */
     border-radius: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
+
+.active {
+    filter: opacity(.5);
+    filter: brightness(.7);
+}
+
+.hoverActive:hover {
+    filter: opacity(.9);
+    cursor: pointer;
+}
+
 
 #btn-1 {
     height: 300px;
@@ -60,11 +71,6 @@ main {
     background-color: crimson;
     border: 2px solid black;
     border-radius: 100% 0 0 0;
-}
-
-.active {
-   filter: opacity(.5);
-   filter: brightness(.7);
 }
 
 #btn-2 {
