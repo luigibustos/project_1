@@ -40,6 +40,8 @@ main {
     width: 500px;
     background-color: teal;
     border: 2px solid black;
+    display: flex;
+    flex-direction: row;
 }
 
 #simon-housing {
@@ -55,28 +57,34 @@ main {
 #btn-1 {
     height: 300px;
     width: 300px;
-    background-color: red;
+    background-color: crimson;
     border: 2px solid black;
     border-radius: 100% 0 0 0;
 }
+
+.active {
+   filter: opacity(.5);
+   filter: brightness(.7);
+}
+
 #btn-2 {
     height: 300px;
     width: 300px;
-    background-color: blue;
+    background-color: deepskyblue;
     border: 2px solid black;
     border-radius: 0 100% 0 0;
 }
 #btn-3 {
     height: 300px;
     width: 300px;
-    background-color: green;
+    background-color: limegreen;
     border: 2px solid black;
     border-radius: 0 0 0 100%;
 }
 #btn-4 {
     height: 300px;
     width: 300px;
-    background-color: yellow;
+    background-color: gold;
     border: 2px solid black;
     border-radius: 0 0 100% 0%;
 }
