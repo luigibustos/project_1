@@ -1,5 +1,4 @@
 // Constant Game Variables: 
-// const options = ['green', 'red', 'blue', 'yellow'];
 const sequence = [];
 let userInput = [];
 let round = 0;
@@ -104,14 +103,5 @@ function startGame() {
    roundStarting()
    setTimeout(flashNextButton, 5000)
 }
-
-// function nextRound() {
-//    round++
-//    startBtn.remove()
-//    roundStat.textContent = round
-//    generateSequence()
-//    roundStarting()
-//    setTimeout(flashNextButton, 5000)
-// }
 
 startBtn.addEventListener('click', startGame)
