@@ -57,3 +57,10 @@
 1. Play Sequence
 2. Input Sequence
 3. Calculate Total
+
+### MVP GOALS:
+
+1. Create a Function to Generate a Random Sequence
+2. Create a Function to play the current Sequence
+3. Create a Function to Recieve input from the player and check against the sequence
+4. Loop through each function at the start of each round

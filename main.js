@@ -73,7 +73,7 @@ function checkInput(event) {
             button.removeEventListener('click', checkInput)
          })
          countDownClock.textContent = 'Good Job! Start Next Round'
-         nextRound()
+         startGame()
          return console.log('Player Turn Over')
       }
    } else {
@@ -82,7 +82,8 @@ function checkInput(event) {
          button.removeEventListener('click', checkInput)
       })
       console.log('Game Over!')
-      return alert('Game Over!')
+      if(alert('Alert For your User!')){}
+      else window.location.reload(); 
    }
 }
 
@@ -95,24 +96,22 @@ function roundStarting(){
    return
 }
 
- async function startGame() {
+function startGame() {
    round++ 
    roundStat.textContent = round
+   startBtn.remove()
    generateSequence()
    roundStarting()
    setTimeout(flashNextButton, 5000)
 }
 
-function nextRound() {
-   round++
-   startBtn.remove()
-   roundStat.textContent = round
-   generateSequence()
-   roundStarting()
-   setTimeout(flashNextButton, 5000)
-}
+// function nextRound() {
+//    round++
+//    startBtn.remove()
+//    roundStat.textContent = round
+//    generateSequence()
+//    roundStarting()
+//    setTimeout(flashNextButton, 5000)
+// }
 
 startBtn.addEventListener('click', startGame)
-
-
-
