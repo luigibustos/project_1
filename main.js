@@ -4,6 +4,7 @@ const sequence = [];
 let userInput = [];
 let round = 0;
 let sequenceIdx = 0
+let currentSeq = []
 
 // HTML Elements:
 
@@ -42,21 +43,15 @@ function flashNextButton() {
       sequenceIdx = ++sequenceIdx
    } else {
       gameBtns.forEach((button) => (button.classList.remove('active')));
-      sequenceIdx = 0
       console.log('Sequence Complete')
+      playerTurn()
+      return sequenceIdx = 0
    }
 }
 
-
-// Function to take in user input, then check agains the sequence
-// turn
-// copy sequence
-// activate hover and event lst
-// check input of even list, if true, remove first element
-// keep going until array is empy
-
-let currentSeq = []
+// Function to check player input against sequence
 function playerTurn() {
+   countDownClock.textContent = 'Your Turn'
    currentSeq = [...sequence]
    gameBtns.forEach((button) => {
       button.classList.add('hoverActive')
@@ -77,6 +72,8 @@ function checkInput(event) {
             button.classList.remove('hoverActive')
             button.removeEventListener('click', checkInput)
          })
+         countDownClock.textContent = 'Good Job! Start Next Round'
+         nextRound()
          return console.log('Player Turn Over')
       }
    } else {
@@ -89,30 +86,33 @@ function checkInput(event) {
    }
 }
 
-// Fucntion to start the round:
+// Fucntion to indicate the round is starting:
 function roundStarting(){
    setTimeout(function(){ countDownClock.textContent = "3" }, 1000);
    setTimeout(function(){ countDownClock.textContent = "2" }, 2000);
    setTimeout(function(){ countDownClock.textContent = "1" }, 3000);
    setTimeout(function(){ countDownClock.textContent = "Watch the Sequence" }, 4000);
+   return
 }
 
-function startRound() {
-   // Increase Round Counter
+ async function startGame() {
    round++ 
    roundStat.textContent = round
-   // Generate Next Sequence
    generateSequence()
-   // Countdown Begins 3..2..1
    roundStarting()
-   // Sequence PLays
    setTimeout(flashNextButton, 5000)
-   // Player is allowed to input the sequence
-   // Check if EACH input matches to the sequence idx
-   // Turn off player input and end round
 }
 
-startBtn.addEventListener('click', startRound)
+function nextRound() {
+   round++
+   startBtn.remove()
+   roundStat.textContent = round
+   generateSequence()
+   roundStarting()
+   setTimeout(flashNextButton, 5000)
+}
+
+startBtn.addEventListener('click', startGame)
 
 
 

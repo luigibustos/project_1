@@ -36,12 +36,15 @@ main {
 }
 
 #simon-game-screen {
-    height: 50px;
+    height: 80px;
     width: 500px;
     background-color: teal;
     border: 2px solid black;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
 }
 
 #simon-housing {
