@@ -77,7 +77,7 @@ function checkInput(event) {
             button.removeEventListener('click', gameButtonAudio)
          })
          countDownClock.textContent = 'Round Complete'
-         playSuccessAudio() 
+         playSuccessAudio()
          startGame()
          return console.log('Player Turn Over')
       }
@@ -160,4 +160,3 @@ function gameButtonAudio(event) {
       yellowBtn.play()
    }
 }
-
