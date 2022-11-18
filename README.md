@@ -8,7 +8,10 @@ Simon is an electronic game of short-term memory skill invented by Ralph H. Baer
 - HTML 
 - CSS 
 - JavaScript
-- ![HTML](assets/html5.svg)
+- HTML 5 <img src="./assets/html5.svg" alt="HTML 5" width="30px" height="30px"/>
+- CSS <img src="./assets/css3-alt.svg" alt="HTML 5" width="30px" height="30px"/>
+- JavaScript <img src="./assets/square-js.svg" alt="HTML 5" width="30px" height="30px"/>
+
 ## Getting Started
 [Project 1 - Simon Game](https://luigibustos.github.io/project_1/)
 
