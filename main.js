@@ -1,9 +1,9 @@
 // Constant Game Variables: 
 const sequence = [];
 let userInput = [];
+let currentSeq = []
 let round = 0;
 let sequenceIdx = 0
-let currentSeq = []
 
 // HTML Elements:
 
@@ -71,7 +71,7 @@ function checkInput(event) {
             button.classList.remove('hoverActive')
             button.removeEventListener('click', checkInput)
          })
-         countDownClock.textContent = 'Good Job! Start Next Round'
+         countDownClock.textContent = 'Round Complete'
          startGame()
          return console.log('Player Turn Over')
       }
@@ -81,7 +81,7 @@ function checkInput(event) {
          button.removeEventListener('click', checkInput)
       })
       console.log('Game Over!')
-      if(alert('Alert For your User!')){}
+      if(alert('Game Over!')){}
       else window.location.reload(); 
    }
 }
