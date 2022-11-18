@@ -33,7 +33,6 @@ main {
     height: 80px;
     width: 500px;
     color: white;
-    /* background-color: #202C39; */
     background-image: linear-gradient(to right, #587d9d, #51728f, #496882, #425d75, #3b5368);
     border: 3px solid lightgray;
     border-radius: 12px;
