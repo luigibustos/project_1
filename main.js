@@ -8,10 +8,6 @@ let sequenceIdx = 0
 // HTML Elements:
 
 // Simon Button Variables:
-const redBtn = document.querySelector('#btn-1')
-const blueBtn = document.querySelector('#btn-2')
-const greenBtn = document.querySelector('#btn-3')
-const yellowBtn = document.querySelector('#btn-4')
 const gameBtns = document.querySelectorAll('.game-button')
 
 // Simon Top Button Variables:
@@ -30,6 +26,15 @@ function generateSequence() {
 // Function to flash each color in the current sequence
 function flashButton(callBack) {
    sequence[sequenceIdx].classList.add('active');
+   if(sequence[sequenceIdx] === gameBtns[0]) {
+      redBtn.play()
+   } else if(sequence[sequenceIdx] === gameBtns[1]) {
+      blueBtn.play()
+   } else if(sequence[sequenceIdx] === gameBtns[2]) {
+      greenBtn.play()
+   } else if(sequence[sequenceIdx] === gameBtns[3]){
+      yellowBtn.play()
+   }
    setTimeout(callBack, 1000)
 }
 
@@ -53,6 +58,7 @@ function playerTurn() {
    gameBtns.forEach((button) => {
       button.classList.add('hoverActive')
       button.addEventListener('click', checkInput)
+      button.addEventListener('click', gameButtonAudio)
    })
    return currentSeq
 }
@@ -68,28 +74,34 @@ function checkInput(event) {
          gameBtns.forEach((button) => {
             button.classList.remove('hoverActive')
             button.removeEventListener('click', checkInput)
+            button.removeEventListener('click', gameButtonAudio)
          })
          countDownClock.textContent = 'Round Complete'
+         playSuccessAudio() 
          startGame()
          return console.log('Player Turn Over')
       }
    } else {
+      playGameOverAudio()
+      countDownClock.textContent = 'Game Over'
       gameBtns.forEach((button) => {
          button.classList.remove('hoverActive')
          button.removeEventListener('click', checkInput)
+         button.removeEventListener('click', gameButtonAudio)
       })
-      console.log('Game Over!')
-      if(alert('Game Over!')){}
-      else window.location.reload(); 
+      setTimeout(() => {
+         if(alert('Click OK to start a new game')){}
+         else window.location.reload() 
+      }, 2000)
    }
 }
 
 // Fucntion to indicate the round is starting:
 function roundStarting(){
-   setTimeout(function(){ countDownClock.textContent = "3" }, 1000);
-   setTimeout(function(){ countDownClock.textContent = "2" }, 2000);
-   setTimeout(function(){ countDownClock.textContent = "1" }, 3000);
-   setTimeout(function(){ countDownClock.textContent = "Watch the Sequence" }, 4000);
+   setTimeout(function(){ countDownClock.textContent = "3", countDownAudio()}, 1000);
+   setTimeout(function(){ countDownClock.textContent = "2", countDownAudio() }, 2000);
+   setTimeout(function(){ countDownClock.textContent = "1", countDownAudio() }, 3000);
+   setTimeout(function(){ countDownClock.textContent = "Watch the Sequence", beginRoundAudio() }, 4000);
    return
 }
 
@@ -104,3 +116,48 @@ function startGame() {
 }
 
 startBtn.addEventListener('click', startGame)
+startBtn.addEventListener('click', clickAudio)
+
+// Simon Audio
+const redBtn =  new Audio('https://s3.amazonaws.com/freecodecamp/simonSound1.mp3')
+const blueBtn = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound2.mp3')
+const greenBtn = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound3.mp3')
+const yellowBtn = new Audio('https://s3.amazonaws.com/freecodecamp/simonSound4.mp3')
+
+function playSuccessAudio() {
+   const audioSuccess = new Audio('assets/audio/Success2.mp3')
+   audioSuccess.play()
+}
+
+function playGameOverAudio() {
+   const audioGameOver = new Audio('assets/audio/3-34 Sub-Game Lose.mp3')
+   audioGameOver.play()
+}
+
+function clickAudio() {
+   const audioClick = new Audio('assets/audio/click-audio.mp3')
+   audioClick.play()
+}
+
+function countDownAudio() {
+   const countDownBeep = new Audio('assets/audio/count-down-audio.mp3')
+   countDownBeep.play()
+}
+
+function beginRoundAudio() {
+   const countDownStart = new Audio('assets/audio/count-down-end-audio.mp3')
+   countDownStart.play()
+}
+
+function gameButtonAudio(event) {
+   if(event.target.id === gameBtns[0].id) {
+      redBtn.play()
+   } else if(event.target.id === gameBtns[1].id) {
+      blueBtn.play()
+   } else if(event.target.id === gameBtns[2].id) {
+      greenBtn.play()
+   } else if(event.target.id === gameBtns[3].id){
+      yellowBtn.play()
+   }
+}
+
