@@ -14,15 +14,16 @@ In order to build the game Simon. I created three core functions:
 - A function to accept user input and check against the current sequence
 
 ## Getting Started
+
+### Link to Simon Game
 [Project 1 - Simon Game](https://luigibustos.github.io/project_1/)
 
 ### How to Play
-1. Click the 'Start' button in the Simon game console
-2. The countdown clock will count down at the start of each round
-3. Simon will flash the first sequence. Repeat the sequence when the game console signals 'Your Turn' 
-4. Successfully repeating the sequence will automatically start the next round. Simon will continue to repeat the current sequence and add to the sequence each round. 
-5. Continue playing as long as you can repeat each sequence. 
-6. If you fail to repeat the sequence exactly, Simon will indicate 'Game Over!' through an alert. 
+1. Click the 'Start' button in the Simon game console. The three second countdown clock will indicate the start of each round.
+2. At the start of round one, Simon will flash the first color, then indicate that it is 'Your Turn.' Repeat the sequence by clicking the same color. Successfully repeating the sequence will end the round and automatically start the next. 
+3. For each round, Simon will replay the previous color sequence, then add a new color to the end. 
+4. Continue playing as long as you can repeat each sequence correctly. 
+5. If you fail to repeat the sequence exactly, Simon will indicate 'Game Over!' through an alert. 
 
 ## Technologies Used
 - <img src="./assets/html5.svg" alt="HTML 5" width="20px"/> HTML 
