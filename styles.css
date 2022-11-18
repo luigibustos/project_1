@@ -67,7 +67,6 @@ main {
     cursor: pointer;
 }
 
-
 #btn-1 {
     height: 300px;
     width: 300px;
@@ -83,6 +82,7 @@ main {
     border: 2px solid white;
     border-radius: 0 100% 0 0;
 }
+
 #btn-3 {
     height: 300px;
     width: 300px;
@@ -90,6 +90,7 @@ main {
     border: 2px solid white;
     border-radius: 0 0 0 100%;
 }
+
 #btn-4 {
     height: 300px;
     width: 300px;
@@ -97,6 +98,7 @@ main {
     border: 2px solid white;
     border-radius: 0 0 100% 0%;
 }
+
 #game-screen{
     height: 200px;
     width: 200px;
@@ -115,7 +117,6 @@ button {
     border-radius: 12px;
     font-family: 'Orbitron', sans-serif;
 }
-
 
 button:hover {
     background-color: white;

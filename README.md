@@ -1,5 +1,4 @@
 # Simon - A Game of Short-Term Memory Skill
-#### General Assembly Software Engineer Imersive - Project 1
 
 ## Overview
 
@@ -21,9 +20,9 @@ In order to build the game Simon. I created three core functions:
 1. Click the 'Start' button in the Simon game console
 2. The countdown clock will count down at the start of each round
 3. Simon will flash the first sequence. Repeat the sequence when the game console signals 'Your Turn' 
-4. Successfully repeating the sequence will automatically start the next round. Simon will continue to repeat the current sequence and add one each round. 
+4. Successfully repeating the sequence will automatically start the next round. Simon will continue to repeat the current sequence and add to the sequence each round. 
 5. Continue playing as long as you can repeat each sequence. 
-6. If you fail to repeat the sequence exactly, Simon will indicate 'Game Over!' through an alert
+6. If you fail to repeat the sequence exactly, Simon will indicate 'Game Over!' through an alert. 
 
 ## Technologies Used
 - <img src="./assets/html5.svg" alt="HTML 5" width="20px"/> HTML 

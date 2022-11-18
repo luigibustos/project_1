@@ -1,9 +1,5 @@
 # Project_1 Simon Game
 
-## MVP:
-
-1.
-
 ## Offical Game Instructions:
 
 1. Press the 'on' button on the front of the game unit. Lights and sounds will play.

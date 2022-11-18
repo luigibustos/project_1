@@ -22,7 +22,6 @@ const roundStat = document.querySelector('#round-stat')
 //Function to Generat Sequence and Update Interval Times:
 function generateSequence() {
    let randomNum = Math.floor(Math.random() * 4)
-   // sequence.push({button: gameBtns[randomNum], time: 1000})
    sequence.push(gameBtns[randomNum])
    console.log(sequence)
    return sequence
@@ -31,7 +30,6 @@ function generateSequence() {
 // Function to flash each color in the current sequence
 function flashButton(callBack) {
    sequence[sequenceIdx].classList.add('active');
-   // setTimeout(callBack, sequence[sequenceIdx].time)
    setTimeout(callBack, 1000)
 }
 
@@ -95,6 +93,7 @@ function roundStarting(){
    return
 }
 
+// Function to start each round
 function startGame() {
    round++ 
    roundStat.textContent = round
