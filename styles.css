@@ -8,8 +8,6 @@
 body{
     display: block;
     height: 100vh;
-    /* background-color: #0A2239; */
-    /* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
     background-image: linear-gradient(to top, #c5bfc5, #d1ccd1, #ddd9dd, #e9e7e9, #f5f4f5);
     font-family: 'Orbitron', sans-serif;
 }
@@ -35,7 +33,8 @@ main {
     height: 80px;
     width: 500px;
     color: white;
-    background-color: #202C39;
+    /* background-color: #202C39; */
+    background-image: linear-gradient(to right, #587d9d, #51728f, #496882, #425d75, #3b5368);
     border: 3px solid lightgray;
     border-radius: 12px;
     display: flex;
@@ -60,7 +59,7 @@ main {
 .active {
     filter: opacity(.5);
     filter: brightness(.7);
-    filter: drop-shadow(0 0 2rem white);
+    filter: drop-shadow(0 0 3rem white);
 }
 
 .hoverActive:hover {
