@@ -8,6 +8,11 @@ Simon is an electronic game of short-term memory skill invented by Ralph H. Baer
 - HTML 
 - CSS 
 - JavaScript
-
+- [fa-brands](fa-html5.svg)
 ## Getting Started
 [Project 1 - Simon Game](https://luigibustos.github.io/project_1/)
+
+## Contact
+
+- Email: LouisAlphonsoBustos@gmail.com
+- LinkedIn [Luigi Bustos](https://www.linkedin.com/in/luigibustos/)
