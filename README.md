@@ -18,6 +18,8 @@ In order to build the game Simon. I created three core functions:
 ### Link to Simon Game
 [Project 1 - Simon Game](https://luigibustos.github.io/project_1/)
 
+<a href="https://luigibustos.github.io/project_1/"><img src="assets/Screen Shot 2022-11-18 at 10.13.34 AM.png" alt="Simon Game Screenshot" width="50px" align="left"/></a>
+
 ### How to Play
 1. Click the 'Start' button in the Simon game console. The three second countdown clock will indicate the start of each round.
 2. At the start of round one, Simon will flash the first color, then indicate that it is 'Your Turn.' Repeat the sequence by clicking the same color. Successfully repeating the sequence will end the round and automatically start the next. 
