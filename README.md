@@ -13,7 +13,7 @@ In order to build the game Simon. I created three core functions:
 - A function to display the sequence in order
 - A function to accept user input and check against the current sequence
 
-## Getting Started
+## Play Simon
 
 ### Link to Simon Game
 [Project 1 - Simon Game](https://luigibustos.github.io/project_1/)
@@ -25,19 +25,20 @@ In order to build the game Simon. I created three core functions:
 4. Continue playing as long as you can repeat each sequence correctly. 
 5. If you fail to repeat the sequence exactly, Simon will indicate 'Game Over!' through an alert. 
 
-## Technologies Used
+## Technologies Used:
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-### Additional Resources
+### Additional Resources:
 
 - [ColorSpace](https://mycolor.space/)
 - [Coolors](https://coolors.co/)
 
-## Contact
+## Connect with me:
 
-- **Email**: LouisAlphonsoBustos@gmail.com
-- **LinkedIn**: [Luigi Bustos](https://www.linkedin.com/in/luigibustos/)
+<a href="https://www.linkedin.com/in/luigibustos/"><img align="left" src="assets/icons/linkedin.png" alt="LinkedIn" width="21px"/></a>
+<a href="LouisAlphonsoBustos@gmail.com"><img align="left" src="assets/icons/gmail.png" alt="Gmail" width="21px"/></a>
+<a href="https://github.com/luigibustos"><img align="left" src="assets/icons/github.png" alt="Github" width="21px"/></a>
