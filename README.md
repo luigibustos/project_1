@@ -12,9 +12,7 @@ In order to build the game Simon. I created three core functions
 - A function to generate and store a random sequence:
   ```
 const sequence = [];
-
 const gameBtns = document.querySelectorAll('.game-button')
-
 function generateSequence() {
    let randomNum = Math.floor(Math.random() * 4)
    sequence.push(gameBtns[randomNum])
