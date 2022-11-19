@@ -10,7 +10,7 @@ As a part of General Assembly's Software Engineer Immersive program, I was taske
 
 In order to build the game Simon. I created three core functions
 - A function to generate and store a random sequence:
-  ```
+```
 const sequence = [];
 const gameBtns = document.querySelectorAll('.game-button')
 function generateSequence() {
@@ -20,6 +20,7 @@ function generateSequence() {
    return sequence
 }
 ```
+
 - A function to display the sequence in order
 - A function to accept user input and check against the current sequence
 
