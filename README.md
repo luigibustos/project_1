@@ -40,5 +40,5 @@ In order to build the game Simon. I created three core functions:
 ## Connect with me:
 
 <a href="https://www.linkedin.com/in/luigibustos/"><img align="left" src="assets/icons/linkedin.png" alt="LinkedIn" width="21px"/></a>
-<a href="LouisAlphonsoBustos@gmail.com"><img align="left" src="assets/icons/gmail.png" alt="Gmail" width="21px"/></a>
+<a href="mailto:LouisAlphonsoBustos@gmail.com"><img align="left" src="assets/icons/gmail.png" alt="Gmail" width="21px"/></a>
 <a href="https://github.com/luigibustos"><img align="left" src="assets/icons/github.png" alt="Github" width="21px"/></a>
