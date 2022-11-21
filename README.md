@@ -95,7 +95,7 @@ function checkInput(event) {
 2. At the start of round one, Simon will flash the first color, then indicate that it is 'Your Turn.' Repeat the sequence by clicking the same color. Successfully repeating the sequence will end the round and automatically start the next. 
 3. For each round, Simon will replay the previous color sequence, then add a new color to the end. 
 4. Continue playing as long as you can repeat each sequence correctly. 
-5. If you fail to repeat the sequence exactly, Simon will indicate 'Game Over!' through an alert. 
+5. If you fail to repeat the sequence exactly, Simon will indicate 'Game Over!'
 
 ## Technologies Used:
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
