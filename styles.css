@@ -27,6 +27,7 @@ main {
     align-items: center;
     flex-wrap: nowrap;
 }
+
 .game-title {
     text-align: center;
     margin-top: 4rem;
