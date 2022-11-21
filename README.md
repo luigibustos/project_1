@@ -16,13 +16,72 @@ const gameBtns = document.querySelectorAll('.game-button')
 function generateSequence() {
    let randomNum = Math.floor(Math.random() * 4)
    sequence.push(gameBtns[randomNum])
-   console.log(sequence)
    return sequence
 }
-```
 
+```
 - A function to display the sequence in order
+```
+let sequenceIdx = 0
+function flashButton(callBack) {
+   sequence[sequenceIdx].classList.add('active');
+   setTimeout(callBack, 1000)
+}
+function flashNextButton() {
+   setTimeout(() => { gameBtns.forEach((button) => (button.classList.remove('active')));}, 500)
+   if(sequenceIdx < sequence.length){
+      flashButton(flashNextButton)
+      sequenceIdx = ++sequenceIdx
+   } else {
+      gameBtns.forEach((button) => (button.classList.remove('active')));
+      playerTurn()
+      return sequenceIdx = 0
+   }
+}
+
+```
 - A function to accept user input and check against the current sequence
+```
+let currentSeq = []
+function playerTurn() {
+   countDownClock.textContent = 'Your Turn'
+   currentSeq = [...sequence]
+   gameBtns.forEach((button) => {
+      button.classList.add('hoverActive')
+      button.addEventListener('click', checkInput)
+      button.addEventListener('click', gameButtonAudio)
+   })
+   return currentSeq
+}
+function checkInput(event) {
+   userInput = event.target.id
+   if(userInput === currentSeq[0].id) {
+      currentSeq.splice(0,1)
+      if (currentSeq.length === 0) {
+         gameBtns.forEach((button) => {
+            button.classList.remove('hoverActive')
+            button.removeEventListener('click', checkInput)
+            button.removeEventListener('click', gameButtonAudio)
+         })
+         countDownClock.textContent = 'Round Complete'
+         playSuccessAudio()
+         return startGame()
+      }
+   } else {
+      playGameOverAudio()
+      countDownClock.textContent = 'Game Over'
+      gameBtns.forEach((button) => {
+         button.classList.remove('hoverActive')
+         button.removeEventListener('click', checkInput)
+         button.removeEventListener('click', gameButtonAudio)
+      })
+      setTimeout(() => {
+         if(alert('Click OK to start a new game')){}
+         else window.location.reload() 
+      }, 2000)
+   }
+}
+```
 
 ## Play Simon
 

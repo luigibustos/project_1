@@ -19,7 +19,6 @@ const roundStat = document.querySelector('#round-stat')
 function generateSequence() {
    let randomNum = Math.floor(Math.random() * 4)
    sequence.push(gameBtns[randomNum])
-   console.log(sequence)
    return sequence
 }
 
@@ -45,7 +44,6 @@ function flashNextButton() {
       sequenceIdx = ++sequenceIdx
    } else {
       gameBtns.forEach((button) => (button.classList.remove('active')));
-      console.log('Sequence Complete')
       playerTurn()
       return sequenceIdx = 0
    }
@@ -64,12 +62,9 @@ function playerTurn() {
 }
 
 function checkInput(event) {
-   console.log(currentSeq)
    userInput = event.target.id
    if(userInput === currentSeq[0].id) {
-      console.log('Correct!')
       currentSeq.splice(0,1)
-      console.log(currentSeq)
       if (currentSeq.length === 0) {
          gameBtns.forEach((button) => {
             button.classList.remove('hoverActive')
@@ -78,8 +73,7 @@ function checkInput(event) {
          })
          countDownClock.textContent = 'Round Complete'
          playSuccessAudio()
-         startGame()
-         return console.log('Player Turn Over')
+         return startGame()
       }
    } else {
       playGameOverAudio()
