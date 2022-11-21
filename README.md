@@ -8,8 +8,9 @@ Simon is an electronic game of short-term memory skill invented by Ralph H. Baer
 ### Building Simon
 As a part of General Assembly's Software Engineer Immersive program, I was tasked with building a simple game for my Project 1. I chose the game Simon. 
 
-In order to build the game Simon. I created three core functions
-- A function to generate and store a random sequence:
+In order to build the game Simon. I created three core functions:
+
+- A function to generate and store a random sequence
 ```
 const sequence = [];
 const gameBtns = document.querySelectorAll('.game-button')
