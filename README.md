@@ -88,7 +88,7 @@ function checkInput(event) {
 ### Link to Simon Game
 [Project 1 - Simon Game](https://luigibustos.github.io/project_1/)
 
-<a href="https://luigibustos.github.io/project_1/"><img src="assets/Screen Shot 2022-11-18 at 10.13.34 AM.png" alt="Simon Game Screenshot"  style="display: inline-block; margin: 0 auto; max-width: 150px"/></a>
+<a href="https://luigibustos.github.io/project_1/"><img src="assets/simon-game-screenshot.png" alt="Simon Game Screenshot"  style="display: inline-block; margin: 0 auto; max-width: 150px"/></a>
 
 ### How to Play
 1. Click the 'Start' button in the Simon game console. The three second countdown clock will indicate the start of each round.
