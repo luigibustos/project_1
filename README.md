@@ -34,7 +34,6 @@ function flashNextButton() {
       flashButton(flashNextButton)
       sequenceIdx = ++sequenceIdx
    } else {
-      gameBtns.forEach((button) => (button.classList.remove('active')));
       playerTurn()
       return sequenceIdx = 0
    }
