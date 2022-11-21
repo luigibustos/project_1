@@ -77,9 +77,8 @@ function checkInput(event) {
          button.removeEventListener('click', gameButtonAudio)
       })
       setTimeout(() => {
-         if(alert('Click OK to start a new game')){}
-         else window.location.reload() 
-      }, 2000)
+         window.location.reload() 
+      }, 5000)
    }
 }
 ```
