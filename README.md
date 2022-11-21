@@ -5,10 +5,11 @@
 ### What is Simon? 
 Simon is an electronic game of short-term memory skill invented by Ralph H. Baer and Howard J. Morrison, working for toy design firm Marvin Glass and Associates, with software programming by Lenny Cope. The device creates a series of tones and lights and requires a user to repeat the sequence.
 
+<a href="https://americanhistory.si.edu/collections/search/object/nmah_1302005"><img src="assets/p-1-after-40-years-simon-keeps-repeating-a-winning-pattern-OriginalSimon1978.webp" alt="Picture of Original Simon Game"  style="display: inline-block; margin: 0 auto; max-width: 150px"/></a>
+
 ### Building Simon
 As a part of General Assembly's Software Engineer Immersive program, I was tasked with building a simple game for my Project 1. I chose the game Simon. 
 
-<a href="https://americanhistory.si.edu/collections/search/object/nmah_1302005"><img src="assets/p-1-after-40-years-simon-keeps-repeating-a-winning-pattern-OriginalSimon1978.webp" alt="Picture of Original Simon Game"  style="display: inline-block; margin: 0 auto; max-width: 150px"/></a>
 
 In order to build the game Simon. I created three core functions:
 
