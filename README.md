@@ -84,7 +84,7 @@ function checkInput(event) {
 }
 ```
 
-## Play Simon
+## Getting Started - Play Simon
 
 ### Link to Simon Game
 [Project 1 - Simon Game](https://luigibustos.github.io/project_1/)
@@ -109,6 +109,14 @@ function checkInput(event) {
 
 - [ColorSpace](https://mycolor.space/)
 - [Coolors](https://coolors.co/)
+
+## Next Steps - Future Features
+
+- [x] Sound Effects for each game buttons
+- [ ] Dark Mode
+- [ ] Simon will play the sequence faster each round
+- [ ] Game Leaderboard
+
 
 ## Connect with me:
 
