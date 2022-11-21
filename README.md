@@ -22,7 +22,6 @@ function generateSequence() {
    sequence.push(gameBtns[randomNum])
    return sequence
 }
-
 ```
 - A function to display the sequence in order
 ```
@@ -41,7 +40,6 @@ function flashNextButton() {
       return sequenceIdx = 0
    }
 }
-
 ```
 - A function to accept user input and check against the current sequence
 ```
